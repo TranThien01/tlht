@@ -15,11 +15,7 @@ provider "google" {
   zone    = var.zone
 }
 
-# Variables
-variable "project_id" {
-  description = "The GCP project ID"
-  type        = string
-}
+
 
 variable "region" {
   description = "The GCP region"
@@ -33,11 +29,7 @@ variable "zone" {
   default     = "us-central1-a"
 }
 
-variable "instance_count" {
-  description = "Number of instances to create"
-  type        = number
-  default     = 24
-}
+
 
 variable "machine_type" {
   description = "Machine type for instances"
